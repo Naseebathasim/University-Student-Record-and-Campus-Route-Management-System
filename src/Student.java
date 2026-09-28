@@ -1,5 +1,5 @@
-
-
+23DA2-0520-(linked-list)
+main
 public class Student {
     private String studentId;
     private String name;
@@ -13,6 +13,7 @@ public class Student {
         this.marks = marks;
     }
 
+23DA2-0520-(linked-list)
     public String getStudentId() { return studentId; }
     public String getName() { return name; }
     public String getProgramme() { return programme; }
@@ -25,6 +26,38 @@ public class Student {
     @Override
     public String toString() {
         return String.format("ID: %s | Name: %s | Programme: %s | Marks: %.2f",
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getProgramme() {
+        return programme;
+    }
+
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("ID: %-10s Name: %-15s Programme: %-15s Marks: %.2f",
+main
                 studentId, name, programme, marks);
     }
 }
